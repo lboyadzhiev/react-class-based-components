@@ -1,0 +1,20 @@
+1. What & Why?
+    Components can be defined as JS classes where a render() method defines th to-be-rendered output.
+
+
+2. Working with Cass-based Components
+
+    For creating a class components we need to import "Component" from react, and extends the Component.
+    For using state we need to to 2 things:
+
+        1. Initialize and defined the state;
+
+            To defined state in class based components we use 'constructor', and in the construction we can initialize the state.
+            !!!!!!! In class based components the state is ALWAYS an Object, and name MUST be 'state';
+
+        2. Updated when needed;
+
+            We are updating the state where we needed with special method - 'this.setState()'. 'setState' always take an object, this object contains the new state that we want to set, but it wont overwrite the old one, but instead behind the sceen react will merge the object that we are passin in the setState with the existing state.
+
+3. Error Boundaries
+
