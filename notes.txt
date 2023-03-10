@@ -22,5 +22,9 @@
         -- componentDidUpdate() - Called once component updated (was evalueted & render) = useEffect(..., [someValue]);
         -- componentWillUnmount() - Called right before component is unmount (remove from DOM) = useEffect(()=> {return() => {...}}, []);
 
+    UseContext
+
+        In class based components we use context with 'static contextType = OurContext', but we can use just one context in the component, if we have more than one, we can't use it.
+
 3. Error Boundaries
 
