@@ -16,5 +16,11 @@
 
             We are updating the state where we needed with special method - 'this.setState()'. 'setState' always take an object, this object contains the new state that we want to set, but it wont overwrite the old one, but instead behind the sceen react will merge the object that we are passin in the setState with the existing state.
 
+    Class-based Components Lifecycle
+
+        -- componentDidMount() - Called once component mounted (was evalueated & render) = useEffect(..., []); 
+        -- componentDidUpdate() - Called once component updated (was evalueted & render) = useEffect(..., [someValue]);
+        -- componentWillUnmount() - Called right before component is unmount (remove from DOM) = useEffect(()=> {return() => {...}}, []);
+
 3. Error Boundaries
 
